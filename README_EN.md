@@ -1,52 +1,122 @@
-# 1.8" 360×360 TFT QSPI module (ST77916) — documentation & samples
+<p align="left"><img alt="OSPTEK" src="./images/logo.png" width="200" /></p>
 
-**简体中文：** [`README.md`](README.md)
+<h1 align="center">OSPTEK 1.8″ TFT 360×360 (ST77916 · QSPI)</h1>
+
+<p align="center"><b>Round TFT module · QSPI · ST77916</b></p>
+
+<p align="center"><a href="./README.md">简体中文</a> | English</p>
+
+<p align="center">
+  <img alt="Size: 1.8 inch" src="https://img.shields.io/badge/Size-1.8%22-3498DB?style=flat-square" />
+  <img alt="Resolution: 360x360" src="https://img.shields.io/badge/Resolution-360%C3%97360-8E44AD?style=flat-square" />
+  <img alt="Interface: QSPI" src="https://img.shields.io/badge/Interface-QSPI-27AE60?style=flat-square" />
+  <img alt="Driver: ST77916" src="https://img.shields.io/badge/Driver-ST77916-E7352C?style=flat-square" />
+</p>
+
+<p align="center"><img alt="OSPTEK 1.8″ 360×360 TFT QSPI module (ST77916) product image" src="./images/product.png" width="640" /></p>
+
+## Contents
+
+- [Overview](#overview)
+- [Specifications](#specifications)
+- [Sample projects](#sample-projects)
+- [Repository layout](#repository-layout)
+- [Resources](#resources)
+- [Buy](#buy)
+- [Support](#support)
 
 ---
 
-> This repository provides **sample projects** for this module, together with datasheets, specifications, and interface / bring-up documentation for selection reference and integration.
+## Overview
 
-## Product overview
+OSPTEK **1.8″ 360×360 TFT** is a **QSPI** color display module driven by **ST77916**, with touch controller **CST816D**. The square resolution suits round wearables and compact HMI.
 
-| Item | Description |
-|:--|:--|
-| Module | 1.8-inch **TFT** panel, **360×360** resolution |
-| Interface | **QSPI** |
-| Driver IC | **ST77916** |
-| Spec ID | **`1.8-tft-360x360-qspi-st77916`** is the common product designation in documentation |
+Spec ID (repository name): `1.8-tft-360x360-qspi-st77916`
 
----
+Current module version: **YDP180BT006-V10** (cover variants **YDP180BT008A-V10** / **YDP180BT008B-V10**, see [`MODULE_VERSION.md`](./MODULE_VERSION.md)). Electrical and interface details follow [`docs/YDP_180_BT_006_V10_a22cc8dde1.pdf`](./docs/YDP_180_BT_006_V10_a22cc8dde1.pdf).
+
+## Specifications
+
+| Item | Spec |
+| ---- | ---- |
+| Size | 1.8 inch |
+| Type | TFT (color, transmissive) |
+| Resolution | 360×360 |
+| Interface | QSPI |
+| Driver IC | ST77916 |
+| Touch IC | CST816D |
+
+> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+
+## Sample projects
+
+| Description | Path |
+| ---- | ---- |
+| ESP32-S3 · ST77916 QSPI + LVGL8 | [`examples/esp32s3-idf5_st77916-qspi_lvgl8/`](./examples/esp32s3-idf5_st77916-qspi_lvgl8/) |
+| ESP32-S3 · ST77916 QSPI + esp-lvgl-adapter / LVGL8 | [`examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8/`](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8/) |
+| ESP32-S3 · ST77916 QSPI + esp-lvgl-adapter / LVGL9 | [`examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9/`](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9/) |
+| ESP32-S3 · LVGL8 + TE | [`examples/with-te/esp32s3-idf5_st77916-qspi_lvgl8_lcd-with-te/`](./examples/with-te/esp32s3-idf5_st77916-qspi_lvgl8_lcd-with-te/) |
+| ESP32-S3 · esp-lvgl-adapter LVGL8 + TE | [`examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8_lcd-with-te/`](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8_lcd-with-te/) |
+| ESP32-S3 · esp-lvgl-adapter LVGL9 + TE | [`examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9_lcd-with-te/`](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9_lcd-with-te/) |
 
 ## Repository layout
 
-### Top-level
+```text
+1.8-tft-360x360-qspi-st77916/
+├── README.md
+├── README_EN.md
+├── MODULE_VERSION.md
+├── LICENSE
+├── images/          # README assets
+├── docs/            # datasheets, init files
+└── examples/        # sample projects
+```
 
-| Path | Contents |
-|:--|:--|
-| `docs/` | Datasheets, specifications, initialization documentation |
-| `examples/` | **Sample projects** grouped by feature |
+## Resources
 
-### `examples/` layout
+### Product files
 
-| Location | Description (internal package folder) |
-|:--|:--|
-| `examples/` root | **ESP-IDF代码** (LVGL8 baseline, esp-lvgl-adapter LVGL8 / LVGL9) |
-| `with-te/` | Tear-related samples (**屏幕防撕裂代码**) |
+| Resource | Link |
+| ---- | ---- |
+| Product datasheet (YDP180BT006-V10) | [`docs/YDP_180_BT_006_V10_a22cc8dde1.pdf`](./docs/YDP_180_BT_006_V10_a22cc8dde1.pdf) |
+| Outline drawing (YDP180BT008A-V10 · 2.5D cover) | [`docs/YDP180BT008A-V10.pdf`](./docs/YDP180BT008A-V10.pdf) |
+| Outline drawing (YDP180BT008B-V10 · round cover) | [`docs/YDP180BT008B-V10.pdf`](./docs/YDP180BT008B-V10.pdf) |
+| Driver IC datasheet (ST77916) | [`docs/ST77916_SPEC_V1.0.pdf`](./docs/ST77916_SPEC_V1.0.pdf) |
+| Touch IC datasheet (CST816D) | [`docs/CST_816_D_V1_0_2_1b06dfb078.pdf`](./docs/CST_816_D_V1_0_2_1b06dfb078.pdf) |
+| Init sequence (text) | [`docs/ST77916_BOE_1.8_360x360_QSPI_init_V1.6.txt`](./docs/ST77916_BOE_1.8_360x360_QSPI_init_V1.6.txt) |
 
-### Sample project paths
+### Samples
 
-#### Baseline and esp-lvgl-adapter (`examples/` root)
+- [ESP32-S3 ST77916 QSPI + LVGL8](./examples/esp32s3-idf5_st77916-qspi_lvgl8/)
+- [ESP32-S3 ST77916 QSPI + esp-lvgl-adapter / LVGL8](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8/)
+- [ESP32-S3 ST77916 QSPI + esp-lvgl-adapter / LVGL9](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9/)
+- [ESP32-S3 LVGL8 + TE](./examples/with-te/esp32s3-idf5_st77916-qspi_lvgl8_lcd-with-te/)
+- [ESP32-S3 esp-lvgl-adapter LVGL8 + TE](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8_lcd-with-te/)
+- [ESP32-S3 esp-lvgl-adapter LVGL9 + TE](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9_lcd-with-te/)
 
-| Description | Path |
-|:--|:--|
-| LVGL8 baseline | `examples/esp32s3-idf5_st77916-qspi_lvgl8/` |
-| esp-lvgl-adapter + LVGL8 | `examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8/` |
-| esp-lvgl-adapter + LVGL9 | `examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9/` |
+## Buy
 
-#### Tear-related (`with-te/`)
+<p align="center">
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+</p>
 
-| Description | Path |
-|:--|:--|
-| LVGL8 + LCD with TE | `examples/with-te/esp32s3-idf5_st77916-qspi_lvgl8_lcd-with-te/` |
-| esp-lvgl-adapter + LVGL8 + LCD with TE | `examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8_lcd-with-te/` |
-| esp-lvgl-adapter + LVGL9 + LCD with TE | `examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9_lcd-with-te/` |
+**Overseas (AliExpress)**
+
+- Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+**China (Taobao)**
+
+- Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
+
+## Support
+
+- Technical support / product inquiry: <luyu@osptek.com>
+- QQ group (China): **985881096**
+- Website: <https://osptek.com/>
+- Feel free to open an Issue in this repository if you have any questions
+
+---
+
+<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
