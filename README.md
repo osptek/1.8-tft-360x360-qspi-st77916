@@ -2,7 +2,7 @@
 
 <h1 align="center">OSPTEK 1.8″ TFT 360×360（ST77916 · QSPI）</h1>
 
-<p align="center"><b>圆形 TFT 模组 · QSPI · ST77916</b></p>
+<p align="center"><b>TFT 模组 · QSPI · ST77916 · 多版本索引</b></p>
 
 <p align="center"><a href="./README_EN.md">English</a> | 简体中文</p>
 
@@ -13,93 +13,78 @@
   <img alt="Driver: ST77916" src="https://img.shields.io/badge/Driver-ST77916-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 1.8 寸 360×360 TFT QSPI 模组（ST77916）宣传图" src="./images/product.png" width="640" /></p>
-
 ## 目录
 
-- [产品简介](#产品简介)
-- [规格参数](#规格参数)
-- [示例工程](#示例工程)
-- [仓库结构](#仓库结构)
-- [相关资料](#相关资料)
+- [说明](#说明)
+- [版本一览](#版本一览)
+- [YDP180BT006-V10](#ydp180bt006-v10)
+- [YDP180BT008A-V10](#ydp180bt008a-v10)
+- [YDP180BT008B-V10](#ydp180bt008b-v10)
+- [如何切换分支](#如何切换分支)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
 ---
 
-## 产品简介
+## 说明
 
-OSPTEK **1.8 寸 360×360 TFT** 是一款 **QSPI** 接口彩色显示模组，显示驱动为 **ST77916**，触摸驱动为 **CST816D**。方形分辨率适合圆形穿戴表盘与紧凑 HMI 等场景。
+本仓库收录 **1.8 寸 360×360 TFT（QSPI · ST77916）** 显示模组资料。
+
+**`main` 为导航页**（仓库默认分支）。下表可快速浏览各版本；点击「说明」跳转到本页下方的详细介绍。需要某一版本的完整内容时，请切换到对应**版本分支**（方法见下文）。
 
 规格标识（仓库名）：`1.8-tft-360x360-qspi-st77916`
 
-当前模组版本：**YDP180BT006-V10**（另有盖板变体 **YDP180BT008A-V10** / **YDP180BT008B-V10**，见 [`MODULE_VERSION.md`](./MODULE_VERSION.md)）。电气与接口细节以 [`docs/YDP_180_BT_006_V10_a22cc8dde1.pdf`](./docs/YDP_180_BT_006_V10_a22cc8dde1.pdf) 为准。
+---
 
-## 规格参数
+## 版本一览
 
-| 项目 | 规格 |
-| ---- | ---- |
-| 尺寸 | 1.8 英寸 |
-| 类型 | TFT（彩色透射） |
-| 分辨率 | 360×360 |
-| 接口 | QSPI |
-| 驱动 IC | ST77916 |
-| 触摸驱动 | CST816D |
+| 版本 | 宣传图 | 说明 |
+| ---- | ------ | ---- |
+| YDP180BT006-V10 | <img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="120" /> | [查看详情](#ydp180bt006-v10) |
+| YDP180BT008A-V10 | <img alt="YDP180BT008A-V10" src="./images/YDP180BT008A-V10.png" width="120" /> | [查看详情](#ydp180bt008a-v10) |
+| YDP180BT008B-V10 | <img alt="YDP180BT008B-V10" src="./images/YDP180BT008B-V10.png" width="120" /> | [查看详情](#ydp180bt008b-v10) |
 
-> 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。
+---
 
-## 示例工程
+## YDP180BT006-V10
 
-| 说明 | 路径 |
-| ---- | ---- |
-| ESP32-S3 · ST77916 QSPI + LVGL8 | [`examples/esp32s3-idf5_st77916-qspi_lvgl8/`](./examples/esp32s3-idf5_st77916-qspi_lvgl8/) |
-| ESP32-S3 · ST77916 QSPI + esp-lvgl-adapter / LVGL8 | [`examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8/`](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8/) |
-| ESP32-S3 · ST77916 QSPI + esp-lvgl-adapter / LVGL9 | [`examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9/`](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9/) |
-| ESP32-S3 · LVGL8 + TE 防撕裂 | [`examples/with-te/esp32s3-idf5_st77916-qspi_lvgl8_lcd-with-te/`](./examples/with-te/esp32s3-idf5_st77916-qspi_lvgl8_lcd-with-te/) |
-| ESP32-S3 · esp-lvgl-adapter LVGL8 + TE | [`examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8_lcd-with-te/`](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8_lcd-with-te/) |
-| ESP32-S3 · esp-lvgl-adapter LVGL9 + TE | [`examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9_lcd-with-te/`](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9_lcd-with-te/) |
+<p align="center"><img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="320" /></p>
 
-## 仓库结构
+**说明：** 模组。
 
-```text
-1.8-tft-360x360-qspi-st77916/
-├── README.md
-├── README_EN.md
-├── MODULE_VERSION.md
-├── LICENSE
-├── images/          # README 用图
-├── docs/            # 规格书、驱动手册、初始化等
-└── examples/        # 示例工程
-```
+---
 
-## 相关资料
+## YDP180BT008A-V10
 
-### 本产品资料
+<p align="center"><img alt="YDP180BT008A-V10" src="./images/YDP180BT008A-V10.png" width="320" /></p>
 
-| 资料 | 链接 |
-| ---- | ---- |
-| 产品规格书（YDP180BT006-V10） | [`docs/YDP_180_BT_006_V10_a22cc8dde1.pdf`](./docs/YDP_180_BT_006_V10_a22cc8dde1.pdf) |
-| 外形图（YDP180BT008A-V10 · 2.5D 盖板） | [`docs/YDP180BT008A-V10.pdf`](./docs/YDP180BT008A-V10.pdf) |
-| 外形图（YDP180BT008B-V10 · 圆盖板） | [`docs/YDP180BT008B-V10.pdf`](./docs/YDP180BT008B-V10.pdf) |
-| 驱动 IC 数据手册（ST77916） | [`docs/ST77916_SPEC_V1.0.pdf`](./docs/ST77916_SPEC_V1.0.pdf) |
-| 触摸 IC 数据手册（CST816D） | [`docs/CST_816_D_V1_0_2_1b06dfb078.pdf`](./docs/CST_816_D_V1_0_2_1b06dfb078.pdf) |
-| 初始化序列（文本） | [`docs/ST77916_BOE_1.8_360x360_QSPI_init_V1.6.txt`](./docs/ST77916_BOE_1.8_360x360_QSPI_init_V1.6.txt) |
+**说明：** 模组。
 
-### 示例工程
+---
 
-- [ESP32-S3 ST77916 QSPI + LVGL8](./examples/esp32s3-idf5_st77916-qspi_lvgl8/)
-- [ESP32-S3 ST77916 QSPI + esp-lvgl-adapter / LVGL8](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8/)
-- [ESP32-S3 ST77916 QSPI + esp-lvgl-adapter / LVGL9](./examples/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9/)
-- [ESP32-S3 LVGL8 + TE](./examples/with-te/esp32s3-idf5_st77916-qspi_lvgl8_lcd-with-te/)
-- [ESP32-S3 esp-lvgl-adapter LVGL8 + TE](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl8_lcd-with-te/)
-- [ESP32-S3 esp-lvgl-adapter LVGL9 + TE](./examples/with-te/esp32s3-idf5_st77916-qspi_esp-lvgl-adapter_lvgl9_lcd-with-te/)
+## YDP180BT008B-V10
+
+<p align="center"><img alt="YDP180BT008B-V10" src="./images/YDP180BT008B-V10.png" width="320" /></p>
+
+**说明：** 模组。
+
+---
+
+## 如何切换分支
+
+完整产品资料在各**版本分支**中；`main` 仅作导航。
+
+- **网页：** 在仓库页左上角打开分支下拉框，选择与料号对应的版本分支即可。
+- **命令行：** 克隆本仓库后执行 `git checkout <版本分支名>`；若本地已有仓库，先 `git fetch` 再切换。
+
+---
 
 ## 购买链接
 
 <p align="center">
   <a href="https://shop110742373.taobao.com/"><img alt="淘宝官方店铺" src="https://img.shields.io/badge/淘宝-官方店铺-FF6A00?style=for-the-badge" /></a>
   &nbsp;&nbsp;
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
 </p>
 
 **国内（淘宝）**
@@ -109,6 +94,8 @@ OSPTEK **1.8 寸 360×360 TFT** 是一款 **QSPI** 接口彩色显示模组，�
 **海外（AliExpress）**
 
 - 店铺：[OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+---
 
 ## 技术支持
 
