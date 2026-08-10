@@ -46,7 +46,7 @@
 
 <p align="center"><img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="320" /></p>
 
-**说明：** 模组。
+**说明：** 单屏。
 
 ---
 

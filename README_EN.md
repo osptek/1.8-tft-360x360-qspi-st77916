@@ -46,7 +46,7 @@ Repo id: `1.8-tft-360x360-qspi-st77916`
 
 <p align="center"><img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="320" /></p>
 
-**Notes:** Module.
+**Notes:** Bare panel.
 
 ---
 
