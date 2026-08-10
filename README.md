@@ -18,8 +18,6 @@
 - [说明](#说明)
 - [版本一览](#版本一览)
 - [YDP180BT006-V10](#ydp180bt006-v10)
-- [YDP180BT008A-V10](#ydp180bt008a-v10)
-- [YDP180BT008B-V10](#ydp180bt008b-v10)
 - [如何切换分支](#如何切换分支)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
@@ -41,8 +39,6 @@
 | 版本 | 宣传图 | 说明 |
 | ---- | ------ | ---- |
 | YDP180BT006-V10 | <img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="120" /> | [查看详情](#ydp180bt006-v10) |
-| YDP180BT008A-V10 | <img alt="YDP180BT008A-V10" src="./images/YDP180BT008A-V10.png" width="120" /> | [查看详情](#ydp180bt008a-v10) |
-| YDP180BT008B-V10 | <img alt="YDP180BT008B-V10" src="./images/YDP180BT008B-V10.png" width="120" /> | [查看详情](#ydp180bt008b-v10) |
 
 ---
 
@@ -50,23 +46,7 @@
 
 <p align="center"><img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="320" /></p>
 
-**说明：** 带触摸（CST816D）。
-
----
-
-## YDP180BT008A-V10
-
-<p align="center"><img alt="YDP180BT008A-V10" src="./images/YDP180BT008A-V10.png" width="320" /></p>
-
-**说明：** 带触摸（CST816D）。
-
----
-
-## YDP180BT008B-V10
-
-<p align="center"><img alt="YDP180BT008B-V10" src="./images/YDP180BT008B-V10.png" width="320" /></p>
-
-**说明：** 带触摸（CST816D）。
+**说明：** 模组。
 
 ---
 

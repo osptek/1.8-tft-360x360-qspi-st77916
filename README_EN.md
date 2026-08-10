@@ -18,8 +18,6 @@
 - [About](#about)
 - [Versions](#versions)
 - [YDP180BT006-V10](#ydp180bt006-v10)
-- [YDP180BT008A-V10](#ydp180bt008a-v10)
-- [YDP180BT008B-V10](#ydp180bt008b-v10)
 - [How to Switch Branches](#how-to-switch-branches)
 - [Where to Buy](#where-to-buy)
 - [Support](#support)
@@ -41,8 +39,6 @@ Repo id: `1.8-tft-360x360-qspi-st77916`
 | Version | Image | Notes |
 | ------- | ----- | ----- |
 | YDP180BT006-V10 | <img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="120" /> | [Details](#ydp180bt006-v10) |
-| YDP180BT008A-V10 | <img alt="YDP180BT008A-V10" src="./images/YDP180BT008A-V10.png" width="120" /> | [Details](#ydp180bt008a-v10) |
-| YDP180BT008B-V10 | <img alt="YDP180BT008B-V10" src="./images/YDP180BT008B-V10.png" width="120" /> | [Details](#ydp180bt008b-v10) |
 
 ---
 
@@ -50,23 +46,7 @@ Repo id: `1.8-tft-360x360-qspi-st77916`
 
 <p align="center"><img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="320" /></p>
 
-**Notes:** With touch (CST816D).
-
----
-
-## YDP180BT008A-V10
-
-<p align="center"><img alt="YDP180BT008A-V10" src="./images/YDP180BT008A-V10.png" width="320" /></p>
-
-**Notes:** With touch (CST816D).
-
----
-
-## YDP180BT008B-V10
-
-<p align="center"><img alt="YDP180BT008B-V10" src="./images/YDP180BT008B-V10.png" width="320" /></p>
-
-**Notes:** With touch (CST816D).
+**Notes:** Module.
 
 ---
 
