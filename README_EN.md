@@ -51,6 +51,7 @@ Repo id: `1.8-tft-360x360-qspi-st77916`
 <p align="center"><img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="320" /></p>
 
 **Notes:** With touch (CST816D).
+
 ---
 
 ## YDP180BT008A-V10
@@ -58,6 +59,7 @@ Repo id: `1.8-tft-360x360-qspi-st77916`
 <p align="center"><img alt="YDP180BT008A-V10" src="./images/YDP180BT008A-V10.png" width="320" /></p>
 
 **Notes:** With touch (CST816D).
+
 ---
 
 ## YDP180BT008B-V10
@@ -65,6 +67,7 @@ Repo id: `1.8-tft-360x360-qspi-st77916`
 <p align="center"><img alt="YDP180BT008B-V10" src="./images/YDP180BT008B-V10.png" width="320" /></p>
 
 **Notes:** With touch (CST816D).
+
 ---
 
 ## How to Switch Branches
