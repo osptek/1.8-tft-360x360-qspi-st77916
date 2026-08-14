@@ -18,7 +18,6 @@
 - [About](#about)
 - [Versions](#versions)
 - [YDP180BT006-V10](#ydp180bt006-v10)
-- [How to Switch Branches](#how-to-switch-branches)
 - [Where to Buy](#where-to-buy)
 - [Support](#support)
 
@@ -28,7 +27,7 @@
 
 This repository holds materials for the **1.8″ 360×360 TFT (QSPI · ST77916)** module family.
 
-**`main` is the navigation page** (repository default). Use the table below for a quick scan; click **Details** to jump to the section on this page. For a given version’s full content, switch to that **version branch** (see below).
+The **root README is the navigation page**. Use the table below for a quick scan; open **Full docs** to enter that **part-number folder** under `versions/` (product page, datasheets, and examples live there).
 
 Repo id: `1.8-tft-360x360-qspi-st77916`
 
@@ -36,26 +35,19 @@ Repo id: `1.8-tft-360x360-qspi-st77916`
 
 ## Versions
 
-| Version | Image | Notes |
-| ------- | ----- | ----- |
-| YDP180BT006-V10 | <img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="120" /> | [Details](#ydp180bt006-v10) |
+| Version | Image | Summary | Full docs |
+| ------- | ----- | ------- | --------- |
+| YDP180BT006-V10 | <img alt="YDP180BT006-V10" src="./versions/YDP180BT006-V10/images/product.png" width="120" /> | [Summary](#ydp180bt006-v10) | [Full docs](./versions/YDP180BT006-V10/) |
 
 ---
 
 ## YDP180BT006-V10
 
-<p align="center"><img alt="YDP180BT006-V10" src="./images/YDP180BT006-V10.png" width="320" /></p>
+<p align="center"><img alt="YDP180BT006-V10" src="./versions/YDP180BT006-V10/images/product.png" width="320" /></p>
 
 **Notes:** Bare panel.
 
----
-
-## How to Switch Branches
-
-Full product materials are on each **version branch**; `main` is navigation only.
-
-- **Web:** open the branch dropdown at the top left of the repository page and select the branch that matches your part number.
-- **CLI:** after cloning, run `git checkout <version-branch>`; if the repo is already local, `git fetch` first, then switch.
+Full product page, datasheets, and examples: [versions/YDP180BT006-V10/](./versions/YDP180BT006-V10/)
 
 ---
 
